@@ -1,0 +1,23 @@
+$info: #00a9a5;
+
+.underline {
+    width: 80px;
+    height: 1.8px;
+    background-color: $info;
+}
+.skill-set-card {
+    cursor: pointer;
+    transition: .3s ease-out;
+    animation-name: card-animation;
+    animation-duration: 2s;
+}
+.skill-set-card:hover {
+    transform: translateY(-8px);
+}
+@keyframes card-animation {
+    from {transform: translateX(50px);}
+    to {transform: translateX(0px)}
+  }
+
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

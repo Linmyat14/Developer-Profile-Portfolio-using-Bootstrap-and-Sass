@@ -1,0 +1,39 @@
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+// $font-family-sans-serif: 'Open Sans', sans-serif;
+$info: #00a9a5;
+
+.profile-info {
+    font-size: 14px;
+}
+.profile-1-img {
+    animation-name: profile-img-animation;
+    animation-duration: 2s;
+}
+.profile-1-info{
+    animation-name: profile-info-animation;
+    animation-duration: 2s;
+}
+.experience-card-right, .experience-card-left{
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.experience-card-right:hover {
+    transform: translateX(15px);
+}
+.experience-card-left:hover {
+    transform: translateX(-15px);
+}
+
+
+@keyframes profile-img-animation {
+    from {transform: translateX(-50px);}
+    to {transform: translateX(0px)}
+  }
+
+@keyframes profile-info-animation {
+    from {transform: translateX(50px);}
+    to {transform: translateX(0px)}
+  }
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

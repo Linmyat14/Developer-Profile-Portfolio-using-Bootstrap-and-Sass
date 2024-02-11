@@ -1,0 +1,121 @@
+
+$info: #00a9a5;
+$progress-height: 0.4rem;
+$progress-bg: #222a68;
+$carousel-control-color: black;
+
+.navbar {
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+}
+
+.active-color {
+    color: $info;
+}
+.home-carousel-1 {
+    background-image: url("../Images/banner1.jpg");
+    background-size: cover;
+}
+.home-carousel-2 {
+    background-image: url("../Images/banner2.jpg");
+    background-size: cover;
+}
+.home-carousel-3 {
+    background-image: url("../Images/banner3.jpg");
+    background-size: cover;
+}
+.profile-name {
+    letter-spacing: 3px;
+}
+.img-column {
+    position: relative;
+}
+.about-me-1-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about-me-2-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 250px;
+    top: 180px;
+}
+.about-me-info::before{
+    content: "About Me";
+    bottom: 20px;
+    right: 200px;
+    position: relative;
+    font-size: 70px;
+    color: $info;
+    font-weight: 400;
+    text-shadow: 3px 3px 2px rgba(0,0,0,0.6);
+}
+.divider {
+    width: 40%;
+    height: 1.5px;
+    background-color: #2f004f;
+}
+.small-circle {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #5f0a87;
+    border-radius: 50%;
+}
+.large-circle {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #5f0a87;
+    border-radius: 50%;
+}
+.progress {
+    width: 70%;
+}
+.experience-title {
+    letter-spacing: 1.5px;
+}   
+    // Media Queries
+@media screen and (max-width: 768px) { 
+    .about-me-info::before{
+        bottom: 0;
+        right: 0;
+    }
+}
+@media screen and (max-width: 992px) {
+    .home-carousel-1 {
+        background-position: center right;
+    }
+    .home-carousel-2 {
+        background-position: center center;
+    }
+    .home-carousel-3 {
+        background-position: center right;
+    }
+    .about-me-info::before{
+        bottom: 0;
+        right: 0;
+    }
+}
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 15,
+);
+
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
